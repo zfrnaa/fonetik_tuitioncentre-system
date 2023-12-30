@@ -1,0 +1,904 @@
+
+@font-face {
+    font-family: 'Mona Sans';
+    src: url('fonts/Mona Sans/OTF/Mona-Sans-Regular.otf') format('opentype');
+    font-style: normal; /* Optional: Specify font style (normal or italic) */
+}
+
+@font-face {
+    font-family: "Mona Sans Medium";
+    src: url("fonts/Mona Sans/OTF/Mona-Sans-Medium.otf");
+}  @font-face {
+    font-family: "Mona Sans Semibold";
+    src: url("fonts/Mona Sans/OTF/Mona-Sans-SemiBold.otf");
+}  @font-face {
+    font-family: "Mona Sans Bold";
+    src: url("fonts/Mona Sans/OTF/Mona-Sans-Bold.otf");
+}  @font-face {
+    font-family: "Mona Sans Black";
+    src: url("fonts/Mona Sans/OTF/Mona-Sans-Black.otf");
+}  @font-face {
+    font-family: "Mona Sans Light";
+    src: url("fonts/Mona Sans/OTF/Mona-Sans-Light.otf");
+}
+
+* {
+    font-family: "Mona Sans", "Helvetica Neue", sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+.text-info {
+    font-weight: 600;
+}
+
+.container {
+    margin: 0;
+    max-width: 100%;
+    /*display: flex;*/
+    /*position: fixed;*/
+    z-index: 1;
+}
+td{
+    padding-bottom: 14px;
+}
+
+body {
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+body.homeadmin-body {
+    background: #0E0F2E;
+}
+body.body-addstd, body.body-addt, body.body-addp{
+    background: lavender url("img/system-bg.svg") no-repeat center;
+    background-blend-mode: luminosity;
+    background-size: cover;
+}
+body.body-addstd > section > div > div.fh5co-heading > h2
+{
+    font-family: "Mona Sans Semibold";
+    color: #242965;
+}
+
+nav {
+    background-color: #242965;
+}
+
+div.item-menu-cont > div.item-menu a {
+    color: white;
+    font-family: "Mona Sans Medium";
+}
+
+footer {
+    width: 100%;
+    background-color: #8BAFF1FF;
+}
+.utama-footer{
+    background: #242965 url(img/system-bg.svg) no-repeat center;
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+
+body > main > div.mainlogo {
+    margin: 40px auto;
+    width: 320px;
+}
+
+.mainlogo > img {
+    width: 100%;
+    filter: drop-shadow(1px 1px 1px white);
+}
+
+footer > main > div.mainlogo.ml2 > img {
+    width: 66%;
+    margin-inline: 16%;
+    filter: drop-shadow(1px 0px 0px black);
+}
+
+div.mainlogo.ml2 {
+    margin: 40px auto;
+    width: 335px;
+}
+
+.mainlogo strong {
+    color: white;
+}
+
+div.mainlogo.ml2> p > strong {
+    color: black;
+}
+
+.fh5co-loader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(admin/img/loader.gif) center no-repeat #fff;
+}
+
+.button-primary {
+    background-color: #1F5F8B;
+}
+
+:root {
+    --calendar-bg-color: #fff;
+    --calendar-font-color: darkblue;
+    --weekdays-border-bottom-color: #404040;
+    --calendar-date-hover-color: #505050;
+    --calendar-current-date-color: skyblue;
+    --calendar-today-color: gold;
+    --calendar-today-innerborder-color: transparent;
+    --calendar-nextprev-bg-color: transparent;
+    --next-prev-arrow-color: darkblue;
+    --calendar-border-radius: 16px;
+    --calendar-prevnext-date-color: #484848;
+}
+
+::-webkit-scrollbar-track {
+    border: 5px solid white;
+    background-color: #b2bec3;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #dfe6e9;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #74b9ff;
+    border-radius: 10px;
+}
+
+canvas#graph-yuran {
+    background-color: red;
+  }
+.fh5co-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-a {
+    margin-left: 20px;
+}
+
+.btn-action {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-right: 20px;
+}
+
+button.btn-addinfo {
+    color: black;
+    padding: 16px 20px;
+    background-color: gold;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+
+.btn-profile {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.btn-profile img {
+    width: 100%;
+}
+
+.btn-logout {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%
+}
+
+.btn-logout img {
+    width: 80%;
+}
+
+.item-menu-cont {
+    display: flex;
+    column-gap: 20px;
+}
+
+.item-menu {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.dropdown-menu {
+    position: initial;
+    padding: 14px 26px;
+}
+
+.dropdown-menu span {
+    color: black;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+.dropdown-item{
+    font-weight: 600;
+}
+
+.about {
+    position: fixed;
+    z-index: 10;
+    bottom: 70px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    transition: all 0.2s ease;
+}
+
+.about .bg_links {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 100%;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    position: absolute;
+}
+
+.about .logo {
+    /*width: 40px;*/
+    /*height: 40px;*/
+    z-index: 9;
+    background-image: url(https://rafaelavlucas.github.io/assets/codepen/logo_white.svg);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: 10px 7px;
+    opacity: 0.9;
+    transition: all 1s 0.2s ease;
+    bottom: 0;
+    right: 0;
+}
+
+.about .social {
+    opacity: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.about .social .icon {
+    width: 100%;
+    height: 100%;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    /*display: flex;*/
+    transition: all 0.2s ease, background-color 0.4s ease;
+    opacity: 0;
+    border-radius: 100%;
+}
+
+.about .social.portfolio {
+    transition: all 0.8s ease;
+}
+
+.about .social.portfolio .icon {
+    background-image: url(img/wfb.png);
+}
+
+.about .social.dribbble {
+    transition: all 0.3s ease;
+}
+
+.about .social.dribbble .icon {
+    background-image: url(img/wgmail.png);
+}
+
+.about .social.linkedin {
+    transition: all 0.8s ease;
+}
+
+.about .social.linkedin .icon {
+    background-image: url(img/wtwasap.png);
+}
+
+.about:hover {
+    width: 105px;
+    height: 105px;
+    transition: all 0.6s cubic-bezier(0.64, 0.01, 0.07, 1.65);
+}
+
+.about:hover .logo {
+    opacity: 1;
+    transition: all 0.6s ease;
+}
+
+.about:hover .social {
+    opacity: 1;
+}
+
+.about:hover .social .icon {
+    opacity: 0.9;
+}
+
+.about:hover .social:hover {
+    background-size: 28px;
+}
+
+.about:hover .social:hover .icon {
+    background-size: 65%;
+    opacity: 1;
+}
+
+.about:hover .social.portfolio {
+    right: 0;
+    bottom: calc(100% - 40px);
+    transition: all 0.3s 0s cubic-bezier(0.64, 0.01, 0.07, 1.65);
+}
+
+.about:hover .social.portfolio .icon:hover {
+    background-color: #003164;
+}
+
+.about:hover .social.dribbble {
+    bottom: 45%;
+    right: 45%;
+    transition: all 0.3s 0.15s cubic-bezier(0.64, 0.01, 0.07, 1.65);
+}
+
+.about:hover .social.dribbble .icon:hover {
+    background-color: #ea4c89;
+}
+
+.about:hover .social.linkedin {
+    bottom: 0;
+    right: calc(100% - 40px);
+    transition: all 0.3s 0.25s cubic-bezier(0.64, 0.01, 0.07, 1.65);
+}
+
+.about:hover .social.linkedin .icon:hover {
+    background-color: #5ce54c;
+}
+
+.dashboard {
+    margin: 40px 0;
+}
+
+.data-stats-cont {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.data-items1, .data-items2, .data-items3 {
+    /*background-image: linear-gradient(160deg, #e0e0e0 0%, #6284FF 50%, #FF0000 100%);*/
+    /*background: linear-gradient(135deg, #A3A8A5, #4E67A9);*/
+    border-radius: 50px;
+    background-color: #242965;
+    backdrop-filter: blur(10px);
+    border: 1px solid white;
+    width: 500px;
+    height: 200px;
+    color: white;
+}
+
+.data-items1 {
+    height: inherit;
+}
+
+.data-items2 {
+    height: 100%;
+}
+
+.data-title {
+    font-family: "Mona Sans Semibold";
+}
+
+.data-stats-row1, .data-stats-row2, .data-stats-row3 {
+    display: flex;
+    margin: 0 10px;
+    column-gap: 10px;
+}
+
+.data-cont {
+    font-family: "Mona Sans Semibold";
+    padding: 20px 40px;
+    height: 100%;
+}
+
+.data-stats-row2 {
+    height: 435px;
+}
+
+.data {
+    display: flex;
+    column-gap: 20px;
+    margin-bottom: 20px;
+}
+
+.data-items1.dtct {
+    color: black;
+    background: rgba(255, 251, 0, 0.88);
+}
+
+.data-items1.dtac {
+    background: mediumpurple;
+}
+
+.data-items2.dtf {
+    display: flex;
+    background: rgba(0, 128, 255, 0.63);
+}
+
+.data-items2.dtc {
+    color: black;
+    background: darkseagreen;
+}
+
+.data-items3.dta {
+    background-color: rgba(255, 0, 0, 0.84);
+}
+
+.data-cont.dt2 {
+    width: 100vh;
+    height: 50.8vh;
+    cursor: grab;
+}
+.dtr3{
+    background-color: #00b3ee;
+}
+
+.calendar {
+    font-family: 'IBM Plex Sans', sans-serif;
+    position: relative;
+    max-width: 400px;
+    min-width: 320px;
+    background: var(--calendar-bg-color);
+    color: var(--calendar-font-color);
+    margin-top: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-weight: normal;
+    border-radius: var(--calendar-border-radius);
+}
+
+.calendar-inner {
+    padding: 10px 10px;
+}
+
+.calendar .calendar-inner .calendar-body {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+}
+
+.calendar .calendar-inner .calendar-body div {
+    padding: 4px;
+    min-height: 30px;
+    line-height: 30px;
+    border: 1px solid transparent;
+    margin: 10px 2px 0;
+}
+
+.calendar .calendar-inner .calendar-body div:nth-child(-n+7) {
+    border: 1px solid transparent;
+    border-bottom: 1px solid var(--weekdays-border-bottom-color);
+}
+
+.calendar .calendar-inner .calendar-body div:nth-child(-n+7):hover {
+    border: 1px solid transparent;
+    border-bottom: 1px solid var(--weekdays-border-bottom-color);
+}
+
+.calendar .calendar-inner .calendar-body div > a {
+    color: var(--calendar-font-color);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+.calendar .calendar-inner .calendar-body div:hover {
+    border: 1px solid var(--calendar-date-hover-color);
+    border-radius: 4px;
+}
+
+.calendar .calendar-inner .calendar-body div.empty-dates:hover {
+    border: 1px solid transparent;
+}
+
+.calendar .calendar-inner .calendar-controls {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.calendar .calendar-inner .calendar-today-date {
+    display: grid;
+    text-align: center;
+    cursor: pointer;
+    /*margin: 3px 0;*/
+    background: var(--calendar-current-date-color);
+    color: black;
+    padding: 8px 0;
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+}
+
+.calendar .calendar-inner .calendar-controls .calendar-year-month {
+    display: flex;
+    min-width: 100px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.calendar .calendar-inner .calendar-controls .calendar-next {
+    text-align: right;
+}
+
+.calendar .calendar-inner .calendar-controls .calendar-year-month .calendar-year-label,
+.calendar .calendar-inner .calendar-controls .calendar-year-month .calendar-month-label {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.calendar .calendar-inner .calendar-body .calendar-today {
+    background: var(--calendar-today-color);
+    border-radius: 4px;
+}
+
+.calendar .calendar-inner .calendar-body .calendar-today:hover {
+    border: 1px solid transparent;
+}
+
+.calendar .calendar-inner .calendar-body .calendar-today a {
+    outline: 2px solid var(--calendar-today-innerborder-color);
+}
+
+.calendar .calendar-inner .calendar-controls .calendar-next a,
+.calendar .calendar-inner .calendar-controls .calendar-prev a {
+    color: var(--calendar-font-color);
+    font-family: arial, consolas, sans-serif;
+    font-size: 26px;
+    text-decoration: none;
+    padding: 4px 12px;
+    display: inline-block;
+    background: var(--calendar-nextprev-bg-color);
+    margin: 10px 0 10px 0;
+}
+
+.calendar .calendar-inner .calendar-controls .calendar-next a svg,
+.calendar .calendar-inner .calendar-controls .calendar-prev a svg {
+    height: 20px;
+    width: 20px;
+}
+
+.calendar .calendar-inner .calendar-controls .calendar-next a svg path,
+.calendar .calendar-inner .calendar-controls .calendar-prev a svg path {
+    fill: var(--next-prev-arrow-color);
+}
+
+.calendar .calendar-inner .calendar-body .prev-dates,
+.calendar .calendar-inner .calendar-body .next-dates {
+    color: var(--calendar-prevnext-date-color);
+}
+
+.calendar .calendar-inner .calendar-body .prev-dates:hover,
+.calendar .calendar-inner .calendar-body .next-dates:hover {
+    border: 1px solid transparent;
+    pointer-events: none;
+}
+
+.table-cont-check {
+    margin-inline: 50px;
+}
+
+.table-hover {
+    background-color: gainsboro;
+    font-size: 16px;
+    width: auto;
+    margin: 40px 9vw;
+    padding-inline: 40px;
+}
+div.table-stdcont{
+    border: 2px solid black;
+    width:1000px;
+    margin: auto;
+}
+
+.backdrop-blur {
+    background-color: rgb(255 255 255 / 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 6px;
+    border: 1px solid black;
+}
+.btn-back{
+    background: #007BFF;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 4px;
+    border-width: 0;
+}
+
+input[type=submit].btn-submitform {
+    background-color: gold;
+    color: black;
+    border: 1px solid black;
+    margin-block: 40px 0;
+    margin-inline: 30vw;
+}
+
+.container.indexic-cont {
+    width: 1170px;
+    margin: auto;
+    margin-block: 40px;
+    position: initial;
+    display: block;
+}
+
+div.indexic-input-cont {
+    margin: auto;
+    width: 500px;
+    border: solid 1px #BEBEBF;
+    background-color: #E9F8FA;
+}
+body > main > section > div.container.add-parent{
+    width: fit-content;
+    margin: auto;
+}
+div.add-parent>.block-heading>p{
+    text-align: center;
+}
+
+.reqError {
+    font-size: 14px;
+    color: #FF0000;
+    font-weight: bold;
+}
+.text-info{
+    font-family: "Mona Sans Semibold";
+    color: #1f3a75;
+    text-align: center;
+}
+.style1 {
+    text-align: center;
+    color: #000099;
+    font-weight: bold;
+    font-size: large;
+}
+.indexic-input-cont p{
+    text-align: center;
+}
+.vwh-cont {
+    position: unset;
+    width: 1170px;
+    margin: auto;
+}
+.vwh-6 {
+    width: 6%;
+}
+.vwh-18 {
+    width: 18%;
+}
+.vws-cont, .vt-cont, .vs-cont, .addt-cont,.vw-addbutton, .vwt-cont {
+    margin: auto;
+    display: block;
+    position: unset;
+}
+.carousel.slide img {
+    width: 100%;
+    height: 582px;
+    object-fit: cover;
+}
+.alb > img{
+    margin: auto;
+}
+.tbox {
+    position: absolute;
+    display: none;
+    padding: 14px 17px;
+    z-index: 900;
+}
+div#frameless.tinner {
+    height: auto;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.tmask {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    z-index: 800;
+}
+.tclose {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: url(img/close.png) no-repeat;
+}
+.tclose:hover {
+    background-position: 0 -30px;
+}
+
+#bluemask {
+    background: #4195aa;
+}
+#frameless .tclose {
+    left: 6px;
+}
+/*<!------STYLES POPUP------------- > */
+.style1 {
+    font-weight: bold;
+}
+.text-info {
+    font-weight: 600;
+}
+#t01.t01 {
+    border-collapse: collapse;
+    width: 50%;
+    margin: auto;
+}
+.t-content > iframe{
+    height: 100%;
+}
+.select-teacher, .vw-addbutton, .btn-backvwt, .select-std{
+    margin: auto;
+    width: fit-content;
+}
+.select-teacher input, .select-std input, .select-teacher select, .select-std select{
+    line-height: 0;
+    padding: 10px;
+    border: 1px solid blue;
+    border-radius: 4px;
+}
+.vw-addbutton{
+    margin-top: 20px;
+}
+.vwt-cont{
+    width: 1000px;
+    margin: auto;
+}
+.teacher-cont {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.teacher-item{
+    display: flex;
+    width: 290px;
+}
+.teacher{
+    flex-grow: 1;
+}
+.flex-teacher {
+    display: flex;
+    flex-direction: column;
+}
+.teacher-overlays{
+    line-height: 0;
+    margin: auto;
+    margin-block: 20px 0;
+}
+.teacher-image {
+    margin: auto;
+}
+
+.teacher-image img {
+    object-fit: contain;
+}
+.teacher-name{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.teacher-subject{
+    text-align: center;
+}
+.center-addt{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px){
+    .carousel-control .glyphicon-chevron-left,
+    .carousel-control .glyphicon-chevron-right,
+    .carousel-control .icon-next,
+    .carousel-control .icon-prev {
+        height: -webkit-fill-available;
+    }
+}
+
+@keyframes puff {
+    0% {
+        top: 100%;
+        height: 0;
+        padding: 0;
+    }
+    100% {
+        top: 50%;
+        height: 100%;
+        padding: 0 100%;
+    }
+}
+
+@keyframes borderRadius {
+    0% {
+        border-radius: 50%;
+    }
+    100% {
+        border-radius: 0;
+    }
+}
+
+@keyframes moveDown {
+    0% {
+        top: 50%;
+    }
+    50% {
+        top: 40%;
+    }
+    100% {
+        top: 100%;
+    }
+}
+
+@keyframes moveUp {
+    0% {
+        background: #311b92;
+        top: 100%;
+    }
+    50% {
+        top: 40%;
+    }
+    100% {
+        top: 50%;
+        background: #039be5;
+    }
+}
+
+@keyframes materia {
+    0% {
+        background: #039be5;
+    }
+    50% {
+        background: #039be5;
+        top: 26px;
+    }
+    100% {
+        background: #311b92;
+        width: 100%;
+        height: 64px;
+        border-radius: 0;
+        top: 26px;
+    }
+}
+
+@keyframes moveIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
