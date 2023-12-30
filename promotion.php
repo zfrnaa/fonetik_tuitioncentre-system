@@ -110,6 +110,7 @@
 							<li><a href="courses.php">Courses</a></li>
 							<li class="active"><a href="promotion.php">Promotion</a></li>
 							<li><a href="contact.php">Contact</a></li>
+							<li class="btn-cta"><a href="#"><span>Login | Register</span></a></li>
 						</ul>
 					</div>
 				</div>
@@ -191,7 +192,7 @@
 		</div>
 	</div>
 
-	<footer id="fh5co-footer" role="contentinfo" style="background-image: url(images/img_bg_4.jpg);">
+	<footer id="fh5co-footer" role="contentinfo">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row row-pb-md">
@@ -200,7 +201,7 @@
 					<p>We, Fonetic tutor, always doing our best to make sure our students excel with their study and get
 						their target for Sijil Pelajaran Malaysia (SPM)</p>
 				</div>
-				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
+				<div class="col-md-2f col-sm-4 fh5co-widget">
 					<h3>Explore Us Fonetik</h3>
 					<ul class="fh5co-footer-links">
 						<li><a href="index.php">Home</a></li>

@@ -270,7 +270,7 @@
 						excel with their study and get
 						their target for Sijil Pelajaran Malaysia (SPM)</p>
 				</div>
-				<div class="col-md-2f col-sm-4 col-xs-6 fh5co-widget">
+				<div class="col-md-2f col-sm-4 fh5co-widget">
 					<h3>Explore Us Fonetik</h3>
 					<ul class="fh5co-footer-links">
 						<li><a href="index.php">Home</a></li>
@@ -280,8 +280,8 @@
 					</ul>
 				</div>
 
-				<div class="col-md-2f col-sm-4 col-xs-6 fh5co-widget">
-					<h3>Classes</h3>
+				<div class="col-md-2f col-sm-4 fh5co-widget">
+					<h3>Learn & Grow</h3>
 					<ul class="fh5co-footer-links">
 						<li><a href="activity.php">Activity</a></li>
 						<li><a href="#">Events</a></li>
@@ -289,9 +289,8 @@
 						<li><a href="courses.php">Courses</a></li>
 					</ul>
 				</div>
-
-				<div class="col-md-2f col-sm-4 col-xs-6 fh5co-widget">
-					<h3>Engage us</h3>
+				<div class="col-md-2f col-sm-4 fh5co-widget">
+					<h3>Connect & Discover</h3>
 					<ul class="fh5co-footer-links">
 						<li><a href="promotion.php">Promotion</a></li>
 						<li><a href="about.php">About Us</a></li>

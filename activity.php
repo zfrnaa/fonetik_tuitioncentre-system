@@ -179,10 +179,10 @@ require_once('admin/Connections/conn.php');
 						<a href="#" class="course-img" style="background-image: url(userres/images/debate1.jpg);">
 						</a>
 						<div class="desc">
-							<h3><a href="#">Debate club illustration</a></h3>
-							<p> A debate club gives students of all abilities a fun way of developing their oracy
+							<h3><a href="#">Debate Club</a></h3>
+							<p> A debate club gives students of all abilities a fun way of developing their literacy
 								skills. You can use different activities to help students with their critical thinking
-								and confident communicationBriefly explain the format and topics.</p>
+								and confident communication. Briefly explain the format and topics.</p>
 							<span><a href="#" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
 						</div>
 					</div>
@@ -192,7 +192,7 @@ require_once('admin/Connections/conn.php');
 						<a href="#" class="course-img" style="background-image: url(userres/images/movie1.jpeg);">
 						</a>
 						<div class="desc">
-							<h3><a href="#">Movie screening illustration</a></h3>
+							<h3><a href="#">Movie Screening</a></h3>
 							<p>Connect the movie experience to learning English: Briefly mention how Fonetik chooses
 								movies that spark conversation, expose diverse cultures, or reinforce language concepts
 								learned in class,also describe the comfortable setting, fun snacks, and interactive
@@ -206,9 +206,9 @@ require_once('admin/Connections/conn.php');
 						<a href="#" class="course-img" style="background-image: url(userres/images/board1.jpg);">
 						</a>
 						<div class="desc">
-							<h3><a href="#">Board games illustration</a></h3>
-							<p>EExplain how Fonetik's board games are meticulously designed to target specific grammar
-								points, vocabulary sets, or pronunciation challenges.Describe the collaborative
+							<h3><a href="#">Board Games</a></h3>
+							<p>Explain how Fonetik's board games are meticulously designed to target specific grammar
+								points, vocabulary sets, or pronunciation challenges. Describe the collaborative
 								gameplay, team spirit, and lively discussions that turn language learning into a social
 								adventure.</p>
 							<span><a href="#" class="btn btn-primary btn-sm btn-course">Take A Course</a></span>
@@ -220,7 +220,7 @@ require_once('admin/Connections/conn.php');
 						<a href="#" class="course-img" style="background-image: url(userres/images/field1.jpg);">
 						</a>
 						<div class="desc">
-							<h3><a href="#">Field trip illustration</a></h3>
+							<h3><a href="#">Field Trip</a></h3>
 							<p>By bringing the scene to life through vivid descriptions and emphasizing the unique
 								learning opportunities, you can transform the "field trip illustration" into a powerful
 								motivator for students to embark on enriching language adventures with Fonetik.</p>
