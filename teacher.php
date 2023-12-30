@@ -113,7 +113,6 @@
 							<li><a href="courses.php">Courses</a></li>
 							<li><a href="promotion.php">Promotion</a></li>
 							<li><a href="contact.php">Contact</a></li>
-							<li class="btn-cta"><a href="#"><span>Login | Register</span></a></li>
 						</ul>
 					</div>
 				</div>
@@ -151,8 +150,8 @@
 							<ul class="fh5co-social">
 								<li><a href="#"><i class="icon-facebook2"></i></a></li>
 								<li><a href="#"><i class="icon-twitter2"></i></a></li>
-								<li><a href="#"><i class="icon-dribbble2"></i></a></li>
-								<li><a href="#"><i class="icon-github"></i></a></li>
+								<li><a href="#"><i class="icon-linkedin2"></i></a></li>
+								<li><a href="#"><i class="icon-telegram"></i></a></li>
 							</ul>
 						</div>
 						<span>Teacher</span>
@@ -171,7 +170,7 @@
 							<ul class="fh5co-social">
 								<li><a href="#"><i class="icon-instagram"></i></a></li>
 								<li><a href="#"><i class="icon-twitter2"></i></a></li>
-								<li><a href="#"><i class="icon-behance"></i></a></li>
+								<li><a href="#"><i class="icon-linkedin2"></i></a></li>
 								<li><a href="#"><i class="icon-github"></i></a></li>
 							</ul>
 						</div>
@@ -191,7 +190,7 @@
 							<ul class="fh5co-social">
 								<li><a href="#"><i class="icon-facebook2"></i></a></li>
 								<li><a href="#"><i class="icon-twitter2"></i></a></li>
-								<li><a href="#"><i class="icon-dribbble2"></i></a></li>
+								<li><a href="#"><i class="icon-linkedin2"></i></a></li>
 								<li><a href="#"><i class="icon-github"></i></a></li>
 							</ul>
 						</div>
@@ -211,7 +210,7 @@
 							<ul class="fh5co-social">
 								<li><a href="#"><i class="icon-facebook2"></i></a></li>
 								<li><a href="#"><i class="icon-twitter2"></i></a></li>
-								<li><a href="#"><i class="icon-dribbble2"></i></a></li>
+								<li><a href="#"><i class="icon-linkedin2"></i></a></li>
 								<li><a href="#"><i class="icon-github"></i></a></li>
 							</ul>
 						</div>
@@ -234,7 +233,7 @@
 								<ul class="fh5co-social">
 									<li><a href="#"><i class="icon-facebook2"></i></a></li>
 									<li><a href="#"><i class="icon-twitter2"></i></a></li>
-									<li><a href="#"><i class="icon-dribbble2"></i></a></li>
+									<li><a href="#"><i class="icon-linkedin2"></i></a></li>
 									<li><a href="#"><i class="icon-github"></i></a></li>
 								</ul>
 							</div>
@@ -254,7 +253,7 @@
 								<ul class="fh5co-social">
 									<li><a href="#"><i class="icon-facebook2"></i></a></li>
 									<li><a href="#"><i class="icon-twitter2"></i></a></li>
-									<li><a href="#"><i class="icon-dribbble2"></i></a></li>
+									<li><a href="#"><i class="icon-linkedin2"></i></a></li>
 									<li><a href="#"><i class="icon-github"></i></a></li>
 								</ul>
 							</div>

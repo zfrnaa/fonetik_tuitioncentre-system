@@ -72,6 +72,14 @@ require_once('admin/Connections/conn.php');
 </head>
 <body>
 
+<style>
+	.course{
+		height: 430px;
+	}
+    .btn-vwm-activity{
+	    margin: auto;
+    }
+</style>
 <div class="fh5co-loader"></div>
 
 <div class="about">
@@ -125,7 +133,6 @@ require_once('admin/Connections/conn.php');
 							<li><a href="courses.php">Courses</a></li>
 							<li><a href="promotion.php">Promotion</a></li>
 							<li><a href="contact.php">Contact</a></li>
-							<li class="btn-cta"><a href="#"><span>Login | Register</span></a></li>
 						</ul>
 					</div>
 				</div>
@@ -166,7 +173,7 @@ require_once('admin/Connections/conn.php');
 					<br><br>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row" style="display: flex; flex-wrap: wrap;">
 				<div class="col-md-6 animate-box">
 					<div class="course">
 						<a href="#" class="course-img" style="background-image: url(userres/images/debate1.jpg);">
@@ -221,9 +228,7 @@ require_once('admin/Connections/conn.php');
 						</div>
 					</div>
 				</div>
-				<!--				<div class="desc">-->
-				<span><a href="courses.php" class="btn btn-primary btn-sm btn-course">View More</a></span>
-				<!--				</div>-->
+				<span class="btn-vwm-activity"><a href="courses.php" class="btn btn-primary btn-sm btn-course">View More</a></span>
 			</div>
 		</div>
 	</div>

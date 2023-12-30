@@ -130,7 +130,6 @@ date_default_timezone_set("Asia/Kuala_Lumpur");
 							<li><a href="courses.php">Courses</a></li>
 							<li><a href="promotion.php">Promotion</a></li>
 							<li><a href="contact.php">Contact</a></li>
-							<li class="btn-cta"><a href="#"><span>Login | Register</span></a></li>
 						</ul>
 					</div>
 				</div>
@@ -149,8 +148,7 @@ date_default_timezone_set("Asia/Kuala_Lumpur");
 							<div class="col-md-8 col-md-offset-2 text-center slider-text">
 								<div class="slider-text-inner">
 									<h1 class="heading-section">About Us</h1>
-									<h2>Joins us and your goal became true <a href="http://freehtml5.co/"
-									                                          target="_blank">fonetiktuitioncentre.com</a>
+									<h2>Joins us and your goal became true <a href="">fonetiktuitioncentre.com</a>
 									</h2>
 								</div>
 							</div>

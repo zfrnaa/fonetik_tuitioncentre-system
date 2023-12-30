@@ -125,7 +125,6 @@
 							<li><a href="about.php">About</a></li>
 							<li><a href="promotion.php">Promotion</a></li>
 							<li><a href="contact.php">Contact</a></li>
-							<li class="btn-cta"><a href="#"><span>Login</span></a></li>
 						</ul>
 					</div>
 				</div>

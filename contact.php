@@ -122,7 +122,6 @@
 							<li><a href="courses.php">Courses</a></li>
 							<li><a href="promotion.php">Promotion</a></li>
 							<li class="active"><a href="contact.php">Contact</a></li>
-							<li class="btn-cta"><a href="#"><span>Login | Register</span></a></li>
 						</ul>
 					</div>
 				</div>
